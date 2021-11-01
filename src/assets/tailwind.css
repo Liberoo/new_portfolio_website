@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.skillsHeadline {
+  @apply font-bold text-base text-myGreen my-2 w-full;
+}
