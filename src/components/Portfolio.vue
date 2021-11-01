@@ -38,7 +38,7 @@ export default {
           img: portfolio,
           title: ' Kamil Jamróz Portfolio',
           technology: 'HTML, CSS, Vue.js, Tailwind',
-          github: 'https://github.com/Liberoo/newportfoliowebsite',
+          github: 'https://github.com/Liberoo/new_portfolio_website',
           live: 'https://www.portfolio.kamiljamroz.pl',
           active: false,
         },
