@@ -7,3 +7,5 @@
 .skillsHeadline {
   @apply font-bold text-base text-myGreen my-2 w-full;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap');

@@ -111,7 +111,7 @@
             px-4
           "
           >
-            <div class="px-6 my-2 text-base ">{{ textValue }}</div>
+            <div class="px-6 my-2 text-base hidden lg:block ">{{ textValue }}</div>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ export default {
   data() {
     return {
       textValue: '',
-
+      b: 1,
       activeItem: 0,
 
       skillText: [
@@ -136,7 +136,7 @@ export default {
 
           title: ' HTML | ',
           text:
-            'Tworzenie szkieletu strony internetowej przy wykorzystaniu najnowszej wersji języka HTML.',
+            'Tworzenie szkieletu strony internetowej przy wykorzystaniu najnowszej wersji języka HTML. Tworzenie semantycznego kodu, wykorzystywanie właściwych tagów HTML5, używanie atrybutów związanych z accessiblity  ',
         },
         {
           id: 1,
@@ -150,7 +150,7 @@ export default {
 
           title: 'SCSS | ',
           text:
-            'Potrafię pracować preprocesora SCSS który przyśpiesza, usprawnia pracę a sam kod staje się bardziej czytelny.',
+            'Potrafię pracować preprocesora SCSS który przyśpiesza, usprawnia pracę a sam kod staje się bardziej czytelny. (&, includes, mixins, functions, variables)',
         },
         {
           id: 3,
@@ -193,14 +193,15 @@ export default {
           id: 8,
 
           title: 'ACF | ',
-          text: 'Potrafię zastosować wtyczkę Advance Custom Fields',
+          text:
+            'Potrafię zastosować wtyczkę Advance Custom Fields. Używanie customowych zakładek z globalnymi polami, tworzenie bloków Gutneberga za pomocą ACF',
         },
         {
           id: 9,
 
           title: 'PODSTAWY TWORZENIA SZABLONÓW | ',
           text:
-            'Znam podstawy tworzenia własnego szablonu Wordpress. Wiedza jest bardzo podstawowa. Aktualnie jestem w trakcie jej poszerzania  z tego zakresu ',
+            'Potrafię od podstaw stworzyć motyw który będzie w pełni funkcjonalny w Wordpressie ',
         },
       ],
       skillDesign: [
@@ -213,7 +214,8 @@ export default {
         {
           id: 11,
           title: ' ADOBE XD | ',
-          text: 'Design stron zawsze projektuję w Adobe XD. ',
+          text:
+            'Potrawię tworzyć UI w Adobe XD oraz wpółpracować z nim przy przenoszeniu strony do kodu',
         },
       ],
       skillElse: [
@@ -222,7 +224,7 @@ export default {
 
           title: ' GIT | ',
           text:
-            'Umiem pracować z system kontroli wersji. Znam podstawowe komendy pozwalające na pracę przy aplikacji w zespole.',
+            'Umiem pracować z system kontroli wersji. (Wykonywanie Commitów, checkouty, push and pull, stash, log,gitignore)',
         },
         {
           id: 13,
@@ -248,13 +250,15 @@ export default {
         {
           id: 16,
 
-          title: 'ANGIELSKI B2 | ',
-          text: 'Znam język angielski na poziomie B2. Z takim poziomem ukończyłem studia.',
+          title: 'ANGIELSKI B1 | ',
+          text: 'Znam język angielski na poziomie B1. Z takim poziomem ukończyłem studia.',
         },
       ],
     };
   },
-
+  mounted() {
+    this.textValue = this.skillText[0].text;
+  },
   methods: {
     changeText(parametr) {
       if (parametr < 6) {

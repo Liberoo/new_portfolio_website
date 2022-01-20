@@ -63,7 +63,7 @@ export default {
         {
           id: 4,
           img: project1,
-          title: 'Quiz Game',
+          title: 'Zrobię twoją stronę',
           technology: 'HTML, CSS, Wordpress(Elementor)',
           github: 'https://www.github.com/liberoo',
           live: 'https://www.kamiljamroz.pl',

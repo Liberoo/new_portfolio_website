@@ -1,18 +1,15 @@
 <template>
   <div class="font-spartan text-white">
     <Entrace />
-    <transition name="fade-text" appear>
-      <div v-if="show">
-        <Navi :class="[shadow ? 'shadow-myshadow' : '']" />
-        <About />
 
-        <Skills />
+    <Navi :class="[shadow ? 'shadow-myshadow' : '']" />
+    <About />
 
-        <Portfolio />
-        <Contact />
-        <Footer />
-      </div>
-    </transition>
+    <Skills />
+
+    <Portfolio />
+    <Contact />
+    <Footer />
   </div>
 </template>
 <script>
